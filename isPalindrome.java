@@ -1,9 +1,13 @@
 /**
  * @author Blurout
  */
+import java.util.Scanner;
 public class isPalindrome {
 	public static void main(String[] args) {
-		String word = "bub";
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a word: ");
+		String word = input.nextLine();
+		input.close();
 		boolean TorF = check(word);
 		System.out.println(TorF);
 		if (TorF) {
